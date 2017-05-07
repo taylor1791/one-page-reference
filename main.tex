@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2.0cm, bottom=1.5cm, inner=5.9cm, outer=1.5cm, marginparwidth=3.9cm, marginparsep=0.5cm,footskip=0.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{titling}
+
+\reversemarginpar
+
+\fancyhf{}
+\pagestyle{fancyplain}
+\fancyfoot[R]{\footnotesize vXXX}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.2em}
+
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+
+
+\pretitle{\begin{center}\LARGE}
+\posttitle{\par\end{center}}
+\predate{}
+\date{\vspace{-1em}}
+\postdate{}
+
+
+\title{How to Solve It}
+\author{George P\'{o}lya}
+
+\begin{document}
+
+\maketitle
+
+\section*{Understanding the Problem}
+
+\emph{What is the unknown?}
+\marginpar{
+  \textbf{First}.
+  
+  You have to \emph{understand} the problem.
+}
+\emph{What are the data?}
+\emph{What is the condition?}
+
+Is it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or is it insufficient? Or redundant? Or Contradictory?
+
+Draw a figure.
+Introduce suitable notation.
+
+Separate the various parts of the condition.
+Can you write them down?
+
+\section*{Devising a plan}
+
+Have you seen it before?
+\marginpar{
+  \textbf{Second}.
+  
+  Find the connection between the data and the unknown.
+  You may be obliged to consider auxiliary problems if an immediate connection cannot be found.
+  You should obtain eventually a \emph{plan} of the solution.
+}
+Or have you seen the same problem in a slightly different form?
+
+\emph{Do you know a related problem?}
+Do you know a theorem that could be useful?
+
+\emph{Look at the unknown!} And try to think of a familiar problem having the same or a similar unknown.
+
+\emph{Here is a problem related to yours and solved before. Could you use it?}
+Could you use its result?
+Could you use its method?
+Should you introduce some auxiliary element in order to make its use possible?
+
+Could you restate the problem?
+Could you restate it still differently?
+Go back to definitions.
+
+If you cannot solve the proposed problem try to solve first some related problem.
+Could you imagine a more accessible related problem?
+A more general problem?
+A more special problem?
+An analogous problem?
+Could you solve a part of the problem?
+Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary?
+Could you derive something useful from the data?
+Could you think of other data appropriate to determine the unknown?
+Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other?
+
+Did you use all the data?
+Did you use the whole condition?
+Have you taken into account all essential notions involved in the problem?
+
+\section*{Carrying out the Plan}
+Carrying out your plan of the solution, \emph{check each step}.
+\marginpar{
+  \textbf{Third}.
+  
+  \emph{Carry out} yout plan.
+}
+Can you see clearly that the step is correct?
+Can you prove that it is correct?
+
+\section*{Looking Back}
+Can you \emph{Check the result}?
+\marginpar{
+  \textbf{Fourth}.
+  
+  \emph{Examine} the solution obtained.
+}
+Can you check the argument?
+
+Can you derive the result differently?
+Can you see it at a glance?
+
+Can you use the result, or the method, for some other problem?
+\end{document}
