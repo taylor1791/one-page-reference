@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[landscape, margin=0.25in]{geometry}
+\usepackage{multicol}
+\usepackage{lmodern}
+\usepackage{tabularx}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{center}
+\begin{huge}
+  Primes and Factors
+\end{huge}
+\end{center}
+
+\begin{multicols}{2}
+
+The following tables identify if a given number less than 12,000 is prime or composite,
+  and if composite, the smallest prime factor. Table 1 contains every third hundred
+  beginning with zero (0, 300, 600, 900, etc); Table 2 contains every third hundred
+  beginning with 100 (100, 400, 700, etc); and Table 3 contains the remaining hundreds
+  (200, 500, 800, etc). The hundreds are given in the first column and the tens and ones
+  on the first line at the top of each page. Numbers divisible by 2, 3, or 5 are omitted
+  from the tables. Instead use the divisibility rules to the right to determine if a
+  number is divisible by 2, 3, or 5.
+
+\paragraph{Primality Test} To determine if a number is prime or composite, and if
+  composite, the smallest prime factor, find the hundreds in the first column on the
+  appropriate table. Then, find the tens and ones on the first line at the top of the
+  table. Look on the line with the hundreds and the column with the tens and ones. If
+  the space where this line and column meet contains a number, this number is the
+  smallest prime factor of the given number. If the space contains two dots, ``..'', the
+  given number is prime. If the necessary column is absent, the number is divisible by
+  2, 3, or 5.
+
+\paragraph{Divisibility Rule for 2} A number is divisible by 2 if its last digit is 0,
+  2, 4, 6, or 8. For example, 1224 is divisible by 2 because its last digit is 4.
+
+\paragraph{Divisibility Rule for 3} A number is divisible by 3 if the sum of its digits
+  is divisible by 3. Observe that this process can be repeated until a single digit
+  remains. For example, 1227 is divisible by 3 because $1+2+2+7=12$, and $1+2=3$, so 1227
+  is divisible by 3.
+
+\paragraph{Divisibility Rule for 5} A number is divisible by 5 if its last digit is 0 or
+  5. For example, 1225 is divisible by 5 because its last digit is 5.
+
+\paragraph{Prime Factorization} To find the prime factorization of a number, identify
+  the smallest prime factor of the number using the divisibility rules above and the table
+  below. Then, divide the number by the smallest prime factor. Repeat this process
+  until the quotient is a prime number.
+\end{multicols}
+
+{\setlength{\tabcolsep}{0.5pt}
+\fontsize{5}{8}\selectfont
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{multicols}{3}
+\raggedcolumns{}
+\directlua{dofile ('./tables.lua')}
+\end{multicols}}
+
+\end{document}
